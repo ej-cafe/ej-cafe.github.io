@@ -2,8 +2,11 @@ title: ej-cafe
 description: Judy和Evan的咖啡屋。
 theme: jekyll-theme-architect
 plugins:
-  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
   - jemoji
   - jekyll-mentions
   - jekyll-include-cache

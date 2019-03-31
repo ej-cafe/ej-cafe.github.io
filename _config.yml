@@ -1,6 +1,6 @@
 title: ej-cafe
 description: Judy和Evan的咖啡屋。
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-architect
 plugins:
   - jekyll-sitemap
   - jekyll-feed

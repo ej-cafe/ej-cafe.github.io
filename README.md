@@ -1,5 +1,4 @@
-# ej-cafe.github.io
-Home Site https://ej-cafe.github.io
+# ej-cafe
+Judy和Evan的咖啡屋。
 
-[learn-reactjs](./docs/learn-reactjs/learn-reactjs.md)
-
+## [微信开放平台、公众号和小程序的总结](./docs/wx-openid-and-uniondid/README.md)

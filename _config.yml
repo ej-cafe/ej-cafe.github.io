@@ -1,7 +1,9 @@
-project: ej-cafe
-theme: jekyll-theme-architect
+title: ej-cafe
+description: Judy和Evan的咖啡屋。
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jemoji
   - jekyll-mentions
+  - jekyll-include-cache

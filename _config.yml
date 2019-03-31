@@ -1,5 +1,5 @@
 project: ej-cafe
-theme: jekyll-theme-midnight
+theme: jekyll-theme-architect
 plugins:
   - jekyll-sitemap
   - jekyll-feed

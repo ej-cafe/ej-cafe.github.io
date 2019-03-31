@@ -1,2 +1,7 @@
 project: ej-cafe
 theme: jekyll-theme-architect
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jemoji
+  - jekyll-mentions

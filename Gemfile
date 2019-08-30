@@ -1,2 +1,16 @@
 source 'https://rubygems.org'
-gemspec
+ruby RUBY_VERSION
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+group :jekyll_plugins do
+    gem 'jekyll-feed'
+    gem 'jekyll-sitemap'
+    gem 'jekyll-paginate'
+    gem 'jekyll-seo-tag'
+    gem 'jekyll-redirect-from'
+    gem 'jekyll-avatar'
+    gem 'jemoji'
+    gem 'jekyll-mentions'
+    gem 'jekyll-include-cache'
+    gem 'jekyll-theme-architect'
+    gem "minimal-mistakes-jekyll"
+end

@@ -1,0 +1,184 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>微信开放平台、公众号和小程序的总结 - ej-cafe</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="ej-cafe">
+<meta property="og:title" content="微信开放平台、公众号和小程序的总结">
+
+
+  <link rel="canonical" href="http://localhost:4000/weixin/2019/03/27/%E5%BE%AE%E4%BF%A1%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0-%E5%85%AC%E4%BC%97%E5%8F%B7%E5%92%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93.html">
+  <meta property="og:url" content="http://localhost:4000/weixin/2019/03/27/%E5%BE%AE%E4%BF%A1%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0-%E5%85%AC%E4%BC%97%E5%8F%B7%E5%92%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93.html">
+
+
+
+  <meta property="og:description" content="微信开放平台、公众号和小程序的总结">
+
+
+
+
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2019-03-27T00:00:00+08:00">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="ej-cafe Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--default">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">ej-cafe</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <h1 id="微信开放平台公众号和小程序的总结">微信开放平台、公众号和小程序的总结</h1>
+
+<p><img src="http://localhost:4000/assets/images/header-pic.jpg" alt="header-pic" />
+最近接到企业微信和个人微信相关项目的开发，其中涉及到公众号、小程序、openID和unionID相关的知识点。之前我只是了解大致的关系和流程，并不是特别精通其中原理。借此机会，我把这部分信息整理总结，同时也分享给我的战友（产品经理周少爷）。</p>
+
+<h2 id="微信体系介绍">微信体系介绍</h2>
+<p>微信开放平台下属支持移动应用、网站应用、公众账号、小程序、第三方平台。微信开放平台有独立的登录账号和主体。
+<img src="http://localhost:4000/assets/images/界面截图.png" alt="界面截图" /></p>
+
+<ul>
+  <li>
+    <p>移动应用：如果iOS、Android或者WP的APP需要支持微信的分享、支付、登录等等微信功能，就需要在移动应用区域创建和配置APP信息。iOS配置<strong>Bundle ID</strong>、Android配置<strong>Package Name</strong></p>
+  </li>
+  <li>
+    <p>网站应用：类似移动应用，如果网站需要使用微信的登录等微信功能，就需要在网站应用区域创建和配置网站信息。</p>
+  </li>
+  <li>
+    <p>公众账号：微信开放平台也可以绑定多个微信公众号（PS：<strong>相同主体</strong>：上限50个<strong>不同主体</strong>：上限5个），无论微信公众号主体是否和微信开放平台主体一致。</p>
+  </li>
+  <li>
+    <p>小程序：类似公众账号，微信开放平台也可以绑定多个微信小程序（PS：<strong>相同主体</strong>：上限50个<strong>不同主体</strong>：上限5个），无论微信小程序主体是否和微信开放平台主体一致。</p>
+  </li>
+  <li>
+    <p>第三方平台：公众平台第三方平台是为了让公众号或小程序运营者，在面向垂直行业需求时，可以一键授权给第三方平台（并且可以同时授权给多家第三方），通过第三方平台来完成业务，开放给所有通过开发者资质认证后的开发者使用。（我暂时未使用过这类型）</p>
+
+    <p>微信开放平台就类似下面的体系架构图
+<img src="http://localhost:4000/assets/images/微信体系架构图.png" alt="微信体系架构图" />
+公众号 A和开放平台主体一致，公众号 B和公众号 A及开放平台主体都不一致。
+小程序 A和开放平台主体一致，小程序 B和公众号 A及开放平台主体都不一致。</p>
+    <h2 id="openid和unionid">OpenID和UnionID</h2>
+    <p>OpenID当用户（关注者）使用微信小程序（和微信公众号交互）时候，微信小程序（微信公众号）可以获得用户（关注者）的OpenID。</p>
+    <blockquote>
+      <p>每个用户对每个微信公众号的OpenID是唯一的。
+OpenID是每个微信公众号加密微信号后的结果
+对于不同微信公众号，同一用户的OpenID不同
+如何获取UnionID？
+小程序和公众号需要绑定到微信开放平台，获取用户信息时才能等到UnionID，否则无法获取。换句话说UnionID是微信开放平台加密微信号的结果。
+由此可见，只要是<strong>同一个微信开放平台账号下</strong>的移动应用、网站应用和公众帐号，用户的<strong>OpenID是不同的</strong>，但是<strong>UnionID是唯一的</strong>。</p>
+    </blockquote>
+  </li>
+</ul>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 EJ-Cafe. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>

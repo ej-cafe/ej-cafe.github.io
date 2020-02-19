@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-01T13:50:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ej-cafe</title><subtitle>Judy和Evan的咖啡屋。</subtitle><entry><title type="html">微信开放平台、公众号和小程序的总结</title><link href="http://localhost:4000/weixin/2019/03/27/%E5%BE%AE%E4%BF%A1%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0-%E5%85%AC%E4%BC%97%E5%8F%B7%E5%92%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93.html" rel="alternate" type="text/html" title="微信开放平台、公众号和小程序的总结" /><published>2019-03-27T00:00:00+08:00</published><updated>2019-03-27T00:00:00+08:00</updated><id>http://localhost:4000/weixin/2019/03/27/%E5%BE%AE%E4%BF%A1%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0%E3%80%81%E5%85%AC%E4%BC%97%E5%8F%B7%E5%92%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93</id><content type="html" xml:base="http://localhost:4000/weixin/2019/03/27/%E5%BE%AE%E4%BF%A1%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0-%E5%85%AC%E4%BC%97%E5%8F%B7%E5%92%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93.html">&lt;h1 id=&quot;微信开放平台公众号和小程序的总结&quot;&gt;微信开放平台、公众号和小程序的总结&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-30T15:13:41+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ej-cafe</title><subtitle>Judy和Evan的咖啡屋。</subtitle><entry><title type="html">微信开放平台、公众号和小程序的总结</title><link href="http://localhost:4000/weixin/2019/03/27/%E5%BE%AE%E4%BF%A1%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0-%E5%85%AC%E4%BC%97%E5%8F%B7%E5%92%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93.html" rel="alternate" type="text/html" title="微信开放平台、公众号和小程序的总结" /><published>2019-03-27T00:00:00+08:00</published><updated>2019-03-27T00:00:00+08:00</updated><id>http://localhost:4000/weixin/2019/03/27/%E5%BE%AE%E4%BF%A1%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0%E3%80%81%E5%85%AC%E4%BC%97%E5%8F%B7%E5%92%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93</id><content type="html" xml:base="http://localhost:4000/weixin/2019/03/27/%E5%BE%AE%E4%BF%A1%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0-%E5%85%AC%E4%BC%97%E5%8F%B7%E5%92%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%80%BB%E7%BB%93.html">&lt;h1 id=&quot;微信开放平台公众号和小程序的总结&quot;&gt;微信开放平台、公众号和小程序的总结&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/header-pic.jpg&quot; alt=&quot;header-pic&quot; /&gt;
 最近接到企业微信和个人微信相关项目的开发，其中涉及到公众号、小程序、openID和unionID相关的知识点。之前我只是了解大致的关系和流程，并不是特别精通其中原理。借此机会，我把这部分信息整理总结，同时也分享给我的战友（产品经理周少爷）。&lt;/p&gt;
@@ -27,15 +27,16 @@
 &lt;img src=&quot;http://localhost:4000/assets/images/微信体系架构图.png&quot; alt=&quot;微信体系架构图&quot; /&gt;
 公众号 A和开放平台主体一致，公众号 B和公众号 A及开放平台主体都不一致。
 小程序 A和开放平台主体一致，小程序 B和公众号 A及开放平台主体都不一致。&lt;/p&gt;
-    &lt;h2 id=&quot;openid和unionid&quot;&gt;OpenID和UnionID&lt;/h2&gt;
-    &lt;p&gt;OpenID当用户（关注者）使用微信小程序（和微信公众号交互）时候，微信小程序（微信公众号）可以获得用户（关注者）的OpenID。&lt;/p&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;每个用户对每个微信公众号的OpenID是唯一的。
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;openid和unionid&quot;&gt;OpenID和UnionID&lt;/h2&gt;
+&lt;p&gt;OpenID当用户（关注者）使用微信小程序（和微信公众号交互）时候，微信小程序（微信公众号）可以获得用户（关注者）的OpenID。&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;每个用户对每个微信公众号的OpenID是唯一的。
 OpenID是每个微信公众号加密微信号后的结果
 对于不同微信公众号，同一用户的OpenID不同
 如何获取UnionID？
 小程序和公众号需要绑定到微信开放平台，获取用户信息时才能等到UnionID，否则无法获取。换句话说UnionID是微信开放平台加密微信号的结果。
 由此可见，只要是&lt;strong&gt;同一个微信开放平台账号下&lt;/strong&gt;的移动应用、网站应用和公众帐号，用户的&lt;strong&gt;OpenID是不同的&lt;/strong&gt;，但是&lt;strong&gt;UnionID是唯一的&lt;/strong&gt;。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="WeiXin" /><category term="微信体系" /><category term="微信公众号" /><category term="微信开放平台" /><category term="OpenID和UnionID" /><summary type="html">微信开放平台、公众号和小程序的总结</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name></name></author><category term="WeiXin" /><category term="微信体系" /><category term="微信公众号" /><category term="微信开放平台" /><category term="OpenID和UnionID" /><summary type="html">微信开放平台、公众号和小程序的总结</summary></entry></feed>

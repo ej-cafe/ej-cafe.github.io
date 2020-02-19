@@ -11,6 +11,6 @@ group :jekyll_plugins do
     gem 'jemoji'
     gem 'jekyll-mentions'
     gem 'jekyll-include-cache'
-    gem 'jekyll-theme-architect'
+    gem 'jekyll-theme-midnight'
     gem "minimal-mistakes-jekyll"
 end

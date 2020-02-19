@@ -2,7 +2,6 @@ title: ej-cafe
 title_separator: "-"
 name: EJ-Cafe
 description: Judy和Evan的咖啡屋。
-minimal_mistakes_skin: dark
 theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed
